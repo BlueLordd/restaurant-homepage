@@ -1,0 +1,261 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* Navigation bar */
+#navbar{
+    display: flex;
+    align-items: center;
+    position: relative;
+    justify-content: space-between;
+}
+.logo{                                           
+    margin: 35px 35px;                             
+}
+.logo img{
+    width: 80px;
+    height: 80px;
+    margin: 4px 5px;
+    border-radius: 100px;
+}
+#navbar ul{
+    display: flex;
+}
+#navbar::before{   
+    content: "";
+    background-color: black;
+    position: absolute;                     
+    height: 30%;
+    width: 100%;
+    z-index: -1;
+    opacity: 80.4;
+}
+#navbar ul li{
+    list-style: none;                
+    font-size: 1.7rem;   
+}
+#navbar ul li a{                         
+    color: white;
+    display: block;
+    padding: 3px 30px; 
+    border-radius: 30px;
+    text-decoration: none;
+    text-shadow: 1px 1px black;
+}  
+#navbar ul li a:hover{                         
+    color: black;
+    background-color: whitesmoke;
+    text-shadow: none;
+}
+
+/* Home section */
+#home{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 280px;
+    padding: 0px 50px;
+    margin-bottom: 106px;
+}
+#home::before{                                             
+    content: "";
+    background: url("bg\ 2.jpg") no-repeat center center/cover;
+    position: absolute;                     
+    height: 85%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.9;
+    top: 0px;
+    left: 0px;
+}
+#home h1{
+    color: whitesmoke;
+    text-align: center;
+    text-shadow: 5px 5px black; 
+    font-family: cursive;
+    letter-spacing: 4px;
+    padding-top: 155px;
+}
+#home p{
+    font-size: 1.5rem ;
+    color: white;
+    text-align: center;
+    font-family: 'Segoe UI';
+    font-style: italic;
+    font-weight: 400;
+    text-shadow: 1px 1px black;
+}
+#home .btn{
+    padding: 0.5em 1em;
+    border: 2px solid black;
+    background-color: brown;
+    color: white;
+    margin: 18px ;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    cursor: pointer;
+    letter-spacing: 1px;
+    transition: color 0.30s, border-color 0.30s, box-shadow 0.30s,transform 0.30s;
+}
+#home .btn:hover{
+    border-color: yellow;
+    color:yellow;
+    box-shadow: 0 0.6em 0.4em -0.4em #f1ff5c; 
+    cursor: pointer;
+    transform: translateY(-0.25em);
+}
+
+/* Services Section */
+#services-container{
+    background: url(https://img.freepik.com/premium-photo/junk-food-pattern-illustration_599862-8682.jpg?w=2000) no-repeat center center/cover;
+}
+#services{
+    display: flex;
+    align-items: center;
+}
+#services .box{ 
+    border: 3px solid brown;
+    padding: 34px;
+    margin: 2px 25px;
+    border-radius: 34px;
+    background: rgb(230, 202, 202);
+    margin-bottom: 30px;
+}
+#services .box img{ 
+   height: 160px;
+   margin: auto;
+   display: block;
+   border: 3px solid brown;
+}
+#services .box p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+} 
+#one{
+    font-size: 40px;
+    color: white;
+    text-shadow: 3px 3px black;
+}
+
+
+/* Clients section */
+#client-section{
+    height: 277px;
+    margin-bottom: 20px;
+}
+#client-section::before{
+    content: "";
+    position: absolute;
+    background: url("bg\ 1.jpg") no-repeat center center/cover;
+    width: 100%;
+    height: 46%;
+    z-index: -1;
+    opacity: 0.75;
+}
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+} 
+#clients img{
+    height: 130px;
+}
+#client-section h1{
+    padding: 25px;
+}
+.client-item{
+    padding: 10px;
+}
+#spcl{
+    width: 140px;
+}
+#two{
+    font-size: 40px;
+    color: white;
+    text-shadow: 3px 3px black;
+}
+#clients div{
+    border: 3px solid yellow;
+    border-radius: 15px;
+}
+
+/* Contact Us section */
+#contact h1{
+    padding: 18px;
+}
+#contact{
+    position: relative;
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.8;
+    background: url("contact\ .jpg") no-repeat center center/cover;
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+#contact-box input, 
+#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 15px;
+    font-size: 1.1rem;
+} 
+#contact-box form{
+    width: 40%;
+}
+#contact-box label{
+   font-size: 1.3rem;
+   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+#contact-box button{
+    padding: 6px 15px;
+    border: 2px solid black;
+    background-color: blue;
+    color: whitesmoke;
+    margin: 18px 18px 18px 250px ;
+    font-size: 1.3rem;
+    border-radius: 15px;
+    cursor: pointer;
+}
+#three{
+    font-size: 40px;
+    color: white;
+    text-shadow: 3px 3px black;
+}
+
+/* Footer */
+footer{
+    background: black;
+    color: white;
+    padding: 10px 20px;
+}
+
+
+ /* Utility classes */
+.h-primary{
+    font-size: 3.8rem;
+    padding: 20px 12px 12px 12px;
+    font-family: monospace;
+    
+}
+.h-secondary{
+    font-size: 22px;
+    padding: 12px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.center{
+    text-align: center;
+}
+
+
